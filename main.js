@@ -1,6 +1,5 @@
-let Question = function(question, answer1, answer2, correctAnswer) {
+let Question = function(question, answer1, correctAnswer) {
     this.question = question; 
-    this.answer1 = answer1; 
-    this.answer2 = answer2; 
+    this.answer1 = answer1;  
     this.correctAnswer = correctAnswer; 
 }; 
