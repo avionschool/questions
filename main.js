@@ -2,6 +2,13 @@ let Question = function(question, answer, correctAnswer) {
     this.question = question; 
     this.answer = answer;  
     this.correctAnswer = correctAnswer; 
+    this.askQuestion = function() {
+        var randomNumber = Math.floor(Math.random()*3)
+        console.log(randomNumber)
+        questionsArray[randomNumber]
+        console.log(this.question)
+        console.log(this.answer)
+    }
 }; 
 
 
