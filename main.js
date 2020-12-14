@@ -29,6 +29,11 @@ let questionsArray = [question1, question2, question3];
     while (isGameRunning) {
         const currentQuestion = questionsArray[questionNumber];
         let tempAnswer = prompt(currentQuestion.askQuestion());
+
         currentQuestion.checkAnswer(tempAnswer);
+        if (tempAnswer == "exit"){
+            isGameRunning = false;
+        }
+    
     }
 })();
